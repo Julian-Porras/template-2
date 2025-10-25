@@ -3,8 +3,8 @@
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    sleep(2);
-    return inertia('Home');
+    // sleep(2);
+    return inertia('Auth/Login');
 });
 
-// Route::inertia('/', 'Home');
+Route::inertia('/home', 'Home');
