@@ -7,4 +7,6 @@ Route::get('/', function () {
     return inertia('Auth/Login');
 });
 
-Route::inertia('/home', 'Home');
+Route::inertia('/dashboard', 'Home');
+Route::inertia('/response', 'Home');
+Route::inertia('/button', 'Home');

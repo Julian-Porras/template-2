@@ -19,6 +19,7 @@
     },
     "dependencies": {
         "@inertiajs/react": "^2.2.11",
+        "lucide-react": "^0.553.0",
         "react": "^19.2.0",
         "react-dom": "^19.2.0"
     }
