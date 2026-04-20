@@ -22,7 +22,7 @@ createInertiaApp({
             </UiProvider>
         );
     },
-    progress: {
-        color: "#29d",
-    },
+    // progress: {
+    //     color: "#29d",
+    // },
 });

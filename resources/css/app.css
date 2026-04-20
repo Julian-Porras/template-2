@@ -3,62 +3,71 @@
 @tailwind components;
 @tailwind utilities;
 
-
 :root {
-  font-family: "QuickSand";
-  line-height: 1.5;
-  font-weight: 500;
-  font-size: .9rem;
-  letter-spacing:0.5px;
+    /* font-family: "QuickSand"; */
+    line-height: 1.5;
+    font-weight: 500;
+    font-size: 0.9rem;
+    letter-spacing: 0.5px;
 
-  --text-color: #364153;
-  --bg-color: #ebeff8;
-  --bg-color-white: #ffffff;
-  --primary-color: #0c4a6e;
-  --primary-hover-color: #0369a1;
-  --secondary-color: #082f49;
-  --secondary-hover-color: #0a5f97;
-  --border-radius: 4px;
-  --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+    --text-color: #364153;
+    --bg-color: #ebeff8;
+    --bg-color-white: #ffffff;
+    --primary-color: #0c4a6e;
+    --primary-hover-color: #0369a1;
+    --secondary-color: #082f49;
+    --secondary-hover-color: #0a5f97;
+    --border-radius: 4px;
+    --box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
 
-  /* color-scheme: light dark; */
-  /* color: #213547; */
-  color: var(--text-color);
-  background-color: var(--bg-color);
+    /* color-scheme: light dark; */
+    /* color: #213547; */
+    color: var(--text-color);
+    background-color: var(--bg-color);
 
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  -webkit-user-select: none; /* Safari */
-  -ms-user-select: none; /* IE 10 and IE 11 */
-  user-select: none;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none;
 }
 
 body {
-  margin: 0;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  color: var(--text-color);
-  height: 100vh;
-  width: 100vw;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-color);
+    height: 100vh;
+    width: 100vw;
 }
 #root {
-  width: 100%;
+    width: 100%;
 }
 
 @keyframes fadeIn {
-  from {
-    opacity: 0;
-    transform: scale(0.95);
-  }
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
+    from {
+        opacity: 0;
+        transform: scale(0.95);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
 }
 
 .animate-fadeIn {
-  animation: fadeIn 0.2s ease-out;
+    animation: fadeIn 0.2s ease-out;
+}
+@layer base {
+    body {
+        font-family: theme("fontFamily.body");
+    }
+}
+@layer utilities {
+    .italic {
+        font-family: theme("fontFamily.nunito");
+    }
 }

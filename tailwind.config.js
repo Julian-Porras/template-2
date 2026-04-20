@@ -6,7 +6,12 @@ export default {
         "./resources/**/*.js",
     ],
     theme: {
-        extend: {},
+        extend: {
+            fontFamily: {
+                body: ["Quicksand", "sans-serif"],
+                nunito: ["Nunito", "sans-serif"],
+            },
+        },
     },
     plugins: [],
 };

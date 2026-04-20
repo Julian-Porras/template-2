@@ -5,7 +5,7 @@ import { useUi } from "../Context/UiContext";
 export default function MainLayout({ children }) {
     const { sidebarOpen } = useUi();
     return (
-        <div className="flex min-h-screen w-screen">
+        <div className="flex min-h-screen w-screen ">
             <Header />
             <Sidebar />
             <main
